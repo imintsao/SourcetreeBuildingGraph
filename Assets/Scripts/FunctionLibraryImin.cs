@@ -6,6 +6,23 @@ public static class FunctionLibraryImin //ok,it is "static". so it let us
                                         // to use
 
 {
+    public static Vector3 Morph(float u, float v, float t, Function from, Function to,
+        float progress)
+    {
+        return Vector3.LerpUnclamped (from(u, v, t), to(u, v, t), SmoothStep(0f, 1f,
+            progress));
+    }
+    public static FunctionName GetNextFunctionName(FunctionName name)
+    {
+        return (int)name < functions.Length - 1 ? name + 1 : 0;
+    
+    }
+
+    public static FunctionName GetRandomFunctionNameOtherThan (FunctionName name)
+    {
+        var choice = (FunctionName)Random.Range(1, functions.Length);
+        return choice == name ? 0 : choice;
+    }
     /* public static float Wave(float x, float z, float t) */ //ok,public + static, 
         // float means it can produce a result
         //put float into parameter list, so it will be just like for the

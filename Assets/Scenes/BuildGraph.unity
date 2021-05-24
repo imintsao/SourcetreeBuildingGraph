@@ -155,6 +155,9 @@ MonoBehaviour:
   pointPrefab: {fileID: 996547953578958656, guid: 6093f90e1e573483d891db02c06ff68d, type: 3}
   resolution: 100
   function: 4
+  transitionMode: 1
+  functionDuration: 1
+  transitionDuration: 1
 --- !u!4 &141795479
 Transform:
   m_ObjectHideFlags: 0
@@ -379,6 +382,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   display: {fileID: 730027219}
+  displayMode: 1
   sampleDuration: 1
 --- !u!114 &730027219
 MonoBehaviour:
@@ -656,8 +660,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.000000016763806, y: 0.000000029802322, z: -2.2555469e-10, w: 1}
-  m_LocalPosition: {x: -14.584717, y: 7.3030396, z: -31.573792}
+  m_LocalRotation: {x: -0.0871723, y: 0.89959055, z: -0.21045254, w: -0.37262258}
+  m_LocalPosition: {x: -11.304117, y: 9.599434, z: -8.2932205}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
